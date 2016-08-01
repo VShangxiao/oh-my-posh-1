@@ -26,7 +26,6 @@ Features:
 * Awesome prompt themes for PowerShell in ConEmu
 * Git status indications
 * Current session indications (admin, failed command, user)
-* Includes awesome PowerShell modules
 * Configurable
 * Easily create your own theme
 * Separate settings for oh-my-posh and posh-git
@@ -67,10 +66,26 @@ I use `Meslo LG M for Powerline` in my ConEmu setup together with custom colors 
 Installation
 ------------
 
+### PsGet
+
 Use [PsGet](http://psget.net/) to install oh-my-posh:
 
 ```bash
 Install-Module oh-my-posh
+```
+
+### PowerShell Gallery
+
+Use the Powershell Gallery to install oh-my-posh:
+
+```bash
+Install-Module oh-my-posh -Scope CurrentUser
+```
+
+After installing execute the install script located in your PowerShell modules folder `$HOME\Documents\WindowsPowerShell\Modules\oh-my-posh\<version>\install.ps1`
+
+```bash
+.\install.ps1
 ```
 
 <div id='configuration'/>
